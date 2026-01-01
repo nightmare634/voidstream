@@ -1,0 +1,27 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+# NOTE: We keep `.env` tracked in this repo because this project is frequently set up
+# in environments where automated tooling needs to edit it (Cursor agent, CI bootstrap).
+# If you prefer not to commit secrets, keep `.env` untracked and use `.env.example` instead.
+# .env
+.env.*
+!.env
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
