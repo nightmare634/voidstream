@@ -62,12 +62,11 @@
 					</p>
 
 					<h1 class="mt-5 text-balance text-4xl font-semibold tracking-tight md:text-6xl">
-						Streaming payments, approvals, and transparency — built for modern teams.
+						Streaming payments and approvals with built-in transparency.
 					</h1>
 
 					<p class="mt-5 text-pretty text-base leading-relaxed text-white/70 md:text-lg">
-						Voidstream helps you send money with predictable schedules, real-time visibility, and a durable audit trail. Create a stream,
-						monitor accrual, and keep every sensitive action accountable.
+						Voidstream provides scheduled payments, real-time visibility, and a reliable audit trail. So teams can track accruals and maintain accountability at every step.
 					</p>
 
 					<div class="mt-10">
