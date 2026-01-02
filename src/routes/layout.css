@@ -2,6 +2,17 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+@layer base {
+	/* Slightly calmer default typography */
+	body {
+		@apply text-white/90 antialiased;
+	}
+
+	a {
+		@apply underline-offset-2;
+	}
+}
+
 @layer components {
 	/* Layout primitives (spacing/alignment only) */
 	.vs-page {
@@ -9,35 +20,38 @@
 	}
 
 	.vs-container {
-		@apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+		/* Slightly more breathing room on larger screens */
+		@apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-10;
 	}
 
 	.vs-header {
-		@apply border-b border-white/10;
+		/* Softer chrome; less “template-y” */
+		@apply border-b border-white/8;
 	}
 
 	.vs-header-inner {
-		@apply flex items-center justify-between gap-4 py-5 md:py-6;
+		@apply flex items-center justify-between gap-4 py-6 md:py-7;
 	}
 
 	.vs-main {
-		@apply mx-auto max-w-7xl px-4 py-10 sm:px-6 md:py-12 lg:px-8 lg:py-14;
+		@apply mx-auto max-w-6xl px-4 py-12 sm:px-6 md:py-14 lg:px-10 lg:py-16;
 	}
 
 	.vs-section {
-		@apply mt-12 md:mt-14;
+		@apply mt-14 md:mt-16;
 	}
 
 	.vs-card {
-		@apply rounded-2xl border border-white/10 bg-white/5;
+		/* Calmer card surface */
+		@apply rounded-2xl border border-white/8 bg-white/4;
 	}
 
 	.vs-card-pad {
-		@apply p-6;
+		@apply p-7 md:p-8;
 	}
 
 	.vs-card-pad-sm {
-		@apply px-4 py-3;
+		@apply px-5 py-4;
 	}
 
 	/* Global UX */

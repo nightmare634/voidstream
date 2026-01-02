@@ -580,14 +580,6 @@
 				{/if}
 			</div>
 
-			<aside class="space-y-4">
-				<div class="vs-card vs-card-pad">
-					<div class="text-sm font-semibold">Audit</div>
-					<p class="mt-2 text-sm text-white/70">
-						View all activity in the <a class="text-sky-300 hover:text-sky-200" href="/audit">Audit</a> page.
-					</p>
-				</div>
-			</aside>
 		</section>
 	</main>
 </div>

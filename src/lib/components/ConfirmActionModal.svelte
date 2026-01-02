@@ -32,7 +32,7 @@
 			aria-label="Close dialog"
 		></button>
 
-		<div class="relative w-full max-w-lg rounded-2xl border border-white/10 bg-[#0d1117] p-6 shadow-2xl">
+		<div class="relative w-full max-w-lg rounded-2xl border border-white/8 bg-[#0d1117] p-7 shadow-2xl md:p-8">
 			<div class="flex items-start justify-between gap-4">
 				<div>
 					<div class="text-sm font-semibold">{title}</div>
@@ -42,7 +42,7 @@
 				</div>
 				<button
 					type="button"
-					class="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/85 hover:bg-white/10 disabled:opacity-60"
+					class="rounded-xl border border-white/8 bg-white/4 px-3 py-2 text-sm text-white/85 hover:bg-white/8 disabled:opacity-60"
 					onclick={close}
 					disabled={busy}
 				>
@@ -53,7 +53,7 @@
 			<div class="mt-6 flex items-center justify-end gap-3">
 				<button
 					type="button"
-					class="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/85 hover:bg-white/10 disabled:opacity-60"
+					class="rounded-xl border border-white/8 bg-white/4 px-4 py-2 text-sm text-white/85 hover:bg-white/8 disabled:opacity-60"
 					onclick={close}
 					disabled={busy}
 				>

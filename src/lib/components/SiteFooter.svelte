@@ -8,7 +8,7 @@
 	};
 </script>
 
-<footer class="border-t border-white/10 bg-[#0d1117]">
+<footer class="border-t border-white/8 bg-[#0d1117]">
 	<div class="vs-container py-12 md:py-14">
 		<div class="grid gap-10 md:grid-cols-4">
 			<div class="md:col-span-2">
@@ -16,7 +16,7 @@
 					<img
 						src="/voidstream-logo.jpg"
 						alt="Voidstream"
-						class="h-10 w-10 rounded-xl border border-white/10 bg-white/5 object-cover"
+						class="h-10 w-10 rounded-xl border border-white/8 bg-white/4 object-cover"
 						loading="lazy"
 					/>
 					<div>
@@ -63,7 +63,7 @@
 			</div>
 		</div>
 
-		<div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-8 text-xs text-white/55 md:flex-row md:items-center md:justify-between">
+		<div class="mt-12 flex flex-col gap-3 border-t border-white/8 pt-8 text-xs text-white/55 md:flex-row md:items-center md:justify-between">
 			<div>© {new Date().getFullYear()} Voidstream. All rights reserved.</div>
 			<div class="text-white/45">Built on Solana. Always verify transactions before confirming.</div>
 		</div>
