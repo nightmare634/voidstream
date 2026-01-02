@@ -8,14 +8,10 @@ export default defineConfig({
 		tailwindcss(),
 		sveltekit(),
 		nodePolyfills({
-			globals: {
-				Buffer: true,
-				global: true,
-				process: true
-			}
+			// Only polyfill what we need for browser hydration (Solana/Streamflow deps).
+			// Avoid polyfilling Node crypto into SSR (can cause `crypto-browserify` / CJS `exports` issues).
+			globals: { Buffer: true },
+			include: ['buffer']
 		})
-	],
-	define: {
-		global: 'globalThis'
-	}
+	]
 });
