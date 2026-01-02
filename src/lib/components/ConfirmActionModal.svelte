@@ -32,7 +32,7 @@
 			aria-label="Close dialog"
 		></button>
 
-		<div class="relative w-full max-w-lg rounded-2xl border border-white/8 bg-[#0d1117] p-7 shadow-2xl md:p-8">
+		<div class="relative w-full max-w-lg rounded-2xl border border-white/8 bg-[#050507] p-7 shadow-2xl md:p-8">
 			<div class="flex items-start justify-between gap-4">
 				<div>
 					<div class="text-sm font-semibold">{title}</div>

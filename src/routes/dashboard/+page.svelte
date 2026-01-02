@@ -604,7 +604,7 @@
 			onclick={() => (createOpen = false)}
 			aria-label="Close create stream"
 		></button>
-		<div class="relative w-full max-w-lg rounded-2xl border border-white/10 bg-[#0d1117] p-6 shadow-2xl">
+		<div class="relative w-full max-w-lg rounded-2xl border border-white/10 bg-[#050507] p-6 shadow-2xl">
 			<div class="flex items-start justify-between gap-4">
 				<div>
 					<div class="text-sm font-semibold">Create stream</div>

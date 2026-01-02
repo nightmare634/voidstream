@@ -23,8 +23,7 @@
 			<div
 				class="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_10%,rgba(56,189,248,0.18),transparent_55%),radial-gradient(800px_circle_at_80%_30%,rgba(34,197,94,0.14),transparent_55%),radial-gradient(900px_circle_at_50%_110%,rgba(168,85,247,0.12),transparent_60%)]"
 			></div>
-			<div class="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(13,17,23,0.65),rgba(13,17,23,0.95),rgba(0,0,0,1))]"></div>
-			<div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(closest-side,black,transparent)]"></div>
+			<div class="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(5,5,7,0.65),rgba(5,5,7,0.95),rgba(0,0,0,1))]"></div>
 		</div>
 
 		<header class="relative z-10">

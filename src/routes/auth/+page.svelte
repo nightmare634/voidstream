@@ -72,7 +72,7 @@
 	<meta name="robots" content="noindex" />
 </svelte:head>
 
-<div class="min-h-screen bg-[#0d1117] text-white">
+<div class="min-h-screen bg-[#050507] text-white">
 	<div class="mx-auto max-w-3xl px-6 py-12">
 		<a href="/" class="text-sm text-white/70 hover:text-white">← Back</a>
 

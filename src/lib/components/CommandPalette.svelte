@@ -60,7 +60,7 @@
 			aria-label="Close search"
 		></button>
 
-		<div class="relative w-full max-w-2xl overflow-hidden rounded-2xl border border-white/10 bg-[#0d1117] shadow-2xl">
+		<div class="relative w-full max-w-2xl overflow-hidden rounded-2xl border border-white/10 bg-[#050507] shadow-2xl">
 			<div class="border-b border-white/10 px-4 py-3">
 				<input
 					class="w-full bg-transparent text-sm text-white placeholder:text-white/40 focus:outline-none"

@@ -8,7 +8,7 @@
 	};
 </script>
 
-<footer class="border-t border-white/8 bg-[#0d1117]">
+<footer class="border-t border-white/8 bg-[#050507]">
 	<div class="vs-container py-12 md:py-14">
 		<div class="grid gap-10 md:grid-cols-4">
 			<div class="md:col-span-2">

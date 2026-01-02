@@ -55,7 +55,7 @@
 	<title>Health — Voidstream</title>
 </svelte:head>
 
-<div class="min-h-screen bg-[#0d1117] text-white">
+<div class="min-h-screen bg-[#050507] text-white">
 	<header class="border-b border-white/10">
 		<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
 			<a href="/dashboard" class="text-sm text-white/70 hover:text-white">← Back</a>
