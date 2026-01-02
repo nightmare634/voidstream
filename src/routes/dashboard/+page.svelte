@@ -419,44 +419,107 @@
 	<title>Dashboard — Voidstream</title>
 </svelte:head>
 
-<div class="vs-page">
-	<header class="vs-header">
-		<div class="vs-container vs-header-inner">
-			<div class="flex items-center gap-4">
-				<a href="/" class="inline-flex items-center gap-2">
+<div class="vs-page flex min-h-screen">
+	<!-- Sidebar -->
+	<aside class="hidden w-64 flex-shrink-0 border-r border-white/8 bg-[#030305] md:flex md:flex-col">
+		<div class="flex h-full flex-col">
+			<!-- Logo -->
+			<div class="flex items-center gap-2 border-b border-white/8 px-5 py-5">
+				<a href="/" class="flex items-center gap-2">
+					<img
+						src="/voidstream-logo.jpg"
+						alt="Voidstream"
+						class="h-8 w-8 rounded-lg border border-white/10 object-cover"
+					/>
 					<span class="text-sm font-semibold tracking-tight">Voidstream</span>
 				</a>
-				<nav class="hidden items-center gap-4 text-sm text-white/60 md:flex">
-					<a class="hover:text-white" href="/dashboard">Streams</a>
-					<a class="hover:text-white" href="/audit">Audit</a>
-					<a class="hover:text-white" href="/tools">Tools</a>
-					<a class="hover:text-white" href="/settings/context">Mode</a>
-					<span class="inline-flex items-center gap-2 text-white/45 cursor-not-allowed select-none">
-						Pumpfun
-						<span class="rounded-full border border-white/10 bg-black/20 px-2 py-0.5 text-[10px] text-white/50">Coming soon</span>
-					</span>
-				</nav>
 			</div>
 
-			<div class="flex items-center gap-3">
+			<!-- Navigation -->
+			<nav class="flex-1 space-y-1 px-3 py-4">
 				<a
 					href="/dashboard"
-					class="hidden rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/85 hover:bg-white/10 md:inline-flex"
+					class="flex items-center gap-3 rounded-xl bg-white/5 px-3 py-2.5 text-sm font-medium text-white"
 				>
-					New stream
+					<svg class="h-4 w-4 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+					</svg>
+					Dashboard
+				</a>
+				<a
+					href="/audit"
+					class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+				>
+					<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+					</svg>
+					Audit
+				</a>
+				<a
+					href="/tools"
+					class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+				>
+					<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+					</svg>
+					Tools
+				</a>
+				<a
+					href="/settings/context"
+					class="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-white/70 hover:bg-white/5 hover:text-white"
+				>
+					<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+						<path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+					</svg>
+					Settings
+				</a>
+			</nav>
+
+			<!-- Wallet section -->
+			<div class="border-t border-white/8 p-4">
+				<div class="rounded-xl border border-white/8 bg-white/4 p-3">
+					<div class="text-[11px] uppercase tracking-wide text-white/50">Wallet</div>
+					<div class="mt-1 truncate font-mono text-xs text-white/80">{publicKeyBase58 ? `${publicKeyBase58.slice(0,4)}...${publicKeyBase58.slice(-4)}` : '—'}</div>
+					<div class="mt-1 text-xs text-white/60">{balanceSol.toFixed(4)} SOL</div>
+				</div>
+				<button
+					type="button"
+					class="mt-3 w-full rounded-xl border border-red-500/20 bg-red-500/10 px-3 py-2 text-sm font-medium text-red-300 hover:bg-red-500/15"
+					onclick={async () => {
+						await walletStore.disconnect();
+						goto('/auth');
+					}}
+				>
+					Disconnect wallet
+				</button>
+			</div>
+		</div>
+	</aside>
+
+	<!-- Main content -->
+	<div class="flex-1 overflow-auto">
+		<!-- Mobile header -->
+		<header class="border-b border-white/8 md:hidden">
+			<div class="flex items-center justify-between px-4 py-4">
+				<a href="/" class="flex items-center gap-2">
+					<img src="/voidstream-logo.jpg" alt="Voidstream" class="h-8 w-8 rounded-lg border border-white/10 object-cover" />
+					<span class="text-sm font-semibold">Voidstream</span>
 				</a>
 				<button
 					type="button"
-					class="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/85 hover:bg-white/10"
-					onclick={() => walletStore.disconnect()}
+					class="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/70"
+					onclick={async () => {
+						await walletStore.disconnect();
+						goto('/auth');
+					}}
 				>
 					Disconnect
 				</button>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<main class="vs-main">
+		<main class="px-4 py-8 sm:px-6 lg:px-10 lg:py-10">
 		<div class="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
 			<div>
 				<h1 class="text-2xl font-semibold tracking-tight">Streams</h1>
@@ -581,7 +644,8 @@
 			</div>
 
 		</section>
-	</main>
+		</main>
+	</div>
 </div>
 
 <ConfirmActionModal
