@@ -35,11 +35,16 @@
 				<ul class="mt-4 space-y-2 text-sm">
 					<li><a class="text-white/75 hover:text-white" href="/how-it-works">How it works</a></li>
 					<li><a class="text-white/75 hover:text-white" href="/about">About</a></li>
-					{#if showExternal && links.pumpfun}
-						<li>
+					<li>
+						{#if links.pumpfun}
 							<a class="text-white/75 hover:text-white" href={links.pumpfun} target="_blank" rel="noreferrer">Pumpfun</a>
-						</li>
-					{/if}
+						{:else}
+							<span class="inline-flex items-center gap-2 text-white/50">
+								Pumpfun
+								<span class="rounded-full border border-amber-500/20 bg-amber-500/10 px-1.5 py-0.5 text-[10px] text-amber-400/80">Soon</span>
+							</span>
+						{/if}
+					</li>
 				</ul>
 			</div>
 

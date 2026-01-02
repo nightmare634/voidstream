@@ -3,9 +3,14 @@
 @plugin '@tailwindcss/typography';
 
 @layer base {
-	/* Slightly calmer default typography */
+	/* Typography */
 	body {
 		@apply text-white/90 antialiased;
+	}
+
+	h1, h2, h3, h4, h5, h6,
+	.font-heading {
+		font-family: 'Space Grotesk', system-ui, sans-serif;
 	}
 
 	a {
@@ -52,6 +57,25 @@
 
 	.vs-card-pad-sm {
 		@apply px-5 py-4;
+	}
+
+	/* Amber accent button */
+	.vs-btn-accent {
+		@apply inline-flex items-center justify-center rounded-xl px-6 py-3.5 text-sm font-semibold;
+		@apply bg-gradient-to-r from-amber-500 to-amber-400 text-black;
+		@apply hover:from-amber-400 hover:to-amber-300;
+		@apply focus:outline-none focus:ring-2 focus:ring-amber-400/50;
+		@apply transition-all duration-200;
+	}
+
+	/* Feature card hover */
+	.vs-feature-card {
+		@apply rounded-2xl border border-white/10 bg-white/5 p-7;
+		@apply transition-all duration-200;
+	}
+	.vs-feature-card:hover {
+		@apply border-white/15 bg-white/8;
+		@apply -translate-y-0.5 shadow-lg shadow-white/5;
 	}
 
 	/* Global UX */
