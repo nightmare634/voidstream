@@ -1,9 +1,9 @@
 <script>
-	// External links intentionally hidden until real URLs are provided.
-	const showExternal = false;
+	// External links shown once real URLs are provided.
+	const showExternal = true;
 	const links = {
-		twitter: '',
-		github: '',
+		twitter: 'https://x.com/voidstream23628?s=21&t=HTCztxO_SmWO88vNE_m8Nw',
+		github: 'https://github.com/nightmare634/voidstream',
 		pumpfun: ''
 	};
 </script>
